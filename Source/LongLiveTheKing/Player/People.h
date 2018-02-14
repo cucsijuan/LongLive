@@ -33,7 +33,6 @@ private:
 	FString Lineage; //TODO: los linajes tienen que ser objetos ya que son exteriores al personaje
 	FString Possesions; //TODO: las posesiones tienen que ser objetos y el personaje tiene que tenes una lista de ellas ordenadas por importancia
 	SCharAttributes CharAttributes;
-	TMap<uint32, uint32> OpinionMap;
-
+	
 };
 

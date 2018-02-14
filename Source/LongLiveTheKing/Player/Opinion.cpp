@@ -2,6 +2,7 @@
 
 #include "Opinion.h"
 
+
 void UOpinion::SetOpinion(ERelationModifiers RelationModifier, uint32 amount, uint32 time)
 {
 	SOpinion temp;

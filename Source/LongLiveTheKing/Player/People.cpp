@@ -1,11 +1,14 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "People.h"
+#include "Player/Opinion.h"
+
+TMap<uint32, UOpinion *> OpinionMap;
 
 void UPeople::GenerateRelation(uint32 CharID)
 {
-	//UOpinion Temp;
-	//OpinionMap.Add(CharID, Temp);
+	UOpinion Temp; //TODO: alocar memoria para poder pasar el puntero
+	OpinionMap.Add(CharID, &Temp);
 }
 
 void UPeople::SetPeopleData(FString Name, FString LastName, FString Lineage, FString Possesions)
