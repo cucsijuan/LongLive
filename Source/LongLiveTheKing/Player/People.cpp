@@ -7,8 +7,18 @@ TMap<uint32, UOpinion *> OpinionMap;
 
 void UPeople::GenerateRelation(uint32 CharID)
 {
-	UOpinion Temp; //TODO: alocar memoria para poder pasar el puntero
-	OpinionMap.Add(CharID, &Temp);
+	UOpinion * Temp = NewObject<UOpinion>(this);
+	OpinionMap.Add(CharID, Temp);
+}
+
+FString UPeople::GetName()
+{
+	return Name;
+}
+
+FString UPeople::GetLastName()
+{
+	return LastName;
 }
 
 void UPeople::SetPeopleData(FString Name, FString LastName, FString Lineage, FString Possesions)

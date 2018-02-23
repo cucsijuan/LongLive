@@ -5,7 +5,7 @@
 
 void UOpinion::SetOpinion(ERelationModifiers RelationModifier, uint32 amount, uint32 time)
 {
-	SOpinion temp;
+	FSOpinion temp;
 	temp.Time = time;
 	temp.OpinionMod = amount;
 

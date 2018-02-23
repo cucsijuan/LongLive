@@ -14,11 +14,18 @@ enum class ERelationModifiers : uint8
 	COMPETITION,
 };
 
-struct SOpinion
+USTRUCT()
+struct FSOpinion
 {
+	GENERATED_BODY()
+
+	UPROPERTY()
 	ERelationModifiers RelationMod;
+	UPROPERTY()
 	uint32 OpinionMod; //How Much the opinion grows or decreases
+	UPROPERTY()
 	FString Desc; //Desc of the opinion modifier
+	UPROPERTY()
 	uint32 Time; // date stamp when it should finish
 };
 
@@ -34,7 +41,9 @@ public:
 	void SetOpinion(ERelationModifiers RelationModifier, uint32 amount = 0, uint32 time = 0);
 
 private:
+	UPROPERTY()
 	uint32 TotalOpinion = 0;
-	TArray<SOpinion> OpinionsArray;
+	UPROPERTY()
+	TArray<FSOpinion> OpinionsArray;
 
 };

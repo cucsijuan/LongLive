@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "PlayerComponent.h"
-//#include "People.h"
+#include "People.h"
 
 // Sets default values for this component's properties
 UPlayerComponent::UPlayerComponent()
@@ -19,7 +19,8 @@ void UPlayerComponent::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	
+	CharData = NewObject<UPeople>(this);
+	CharData->SetPeopleData(Name, LastName, "none", "none");
 	
 }
 
@@ -30,5 +31,15 @@ void UPlayerComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// ...
+}
+
+FString UPlayerComponent::GetName()
+{
+	return CharData->GetName();
+}
+
+FString UPlayerComponent::GetLastName()
+{
+	return CharData->GetLastName();
 }
 

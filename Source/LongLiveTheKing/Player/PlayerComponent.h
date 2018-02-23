@@ -6,7 +6,7 @@
 //#include "People.h"
 #include "Components/ActorComponent.h"
 #include "PlayerComponent.generated.h"
-
+class UPeople;
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class LONGLIVETHEKING_API UPlayerComponent : public UActorComponent
 {
@@ -24,10 +24,14 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+	UFUNCTION(BlueprintCallable, Category = "Character Info")
+	FString GetName();
+	UFUNCTION(BlueprintCallable, Category = "Character Info")
+	FString GetLastName();
+
 private:
-
-	//UPeople CharData;
-
+	UPROPERTY()
+	UPeople * CharData = nullptr;
 	UPROPERTY(EditDefaultsOnly, Category = "Player Setup")
 	FString Name;
 	UPROPERTY(EditDefaultsOnly, Category = "Player Setup")
