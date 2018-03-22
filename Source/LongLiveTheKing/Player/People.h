@@ -51,7 +51,7 @@ private:
 	UPROPERTY()
 	FString Lineage; //TODO: los linajes tienen que ser objetos ya que son exteriores al personaje
 	UPROPERTY()
-	FString Possesions; //TODO: las posesiones tienen que ser objetos y el personaje tiene que tenes una lista de ellas ordenadas por importancia
+	FString Possesions; //TODO: las posesiones tienen que ser objetos y el personaje tiene que tener una lista de ellas ordenadas por importancia
 	UPROPERTY()
 	FSCharAttributes CharAttributes;
 	

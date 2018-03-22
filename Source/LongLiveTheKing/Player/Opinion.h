@@ -9,9 +9,9 @@
 UENUM()
 enum class ERelationModifiers : uint8
 {
-	GIFT,
-	FAVOUR,
-	COMPETITION,
+	GIFT, // Gift received
+	FAVOUR, // The character made us a Favour
+	COMPETITION, // The character is seen as a rival
 };
 
 USTRUCT()
