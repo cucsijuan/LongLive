@@ -30,6 +30,9 @@ class LONGLIVETHEKING_API UPeople : public UObject
 	GENERATED_BODY()
 	
 public:
+
+	UPeople();
+
 	UFUNCTION()
 	//Setea los datos de la persona con los parametros dados
 	void SetPeopleData(FString Name, FString LastName, FString Lineage, FString Possesions);
@@ -54,6 +57,11 @@ private:
 	FString Possesions; //TODO: las posesiones tienen que ser objetos y el personaje tiene que tener una lista de ellas ordenadas por importancia
 	UPROPERTY()
 	FSCharAttributes CharAttributes;
+	UPROPERTY()
+	TArray<FString> SaxonNames;
+
+	UFUNCTION()
+	void LoadNames();
 	
 };
 

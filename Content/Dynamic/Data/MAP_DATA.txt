@@ -1,0 +1,28 @@
+﻿0;Norfolk;East Anglia;England;0,100,100
+0;Suffolk;East Anglia;England;200,0,0
+1;Bedford;Essex;England;255,255,255
+1;Essex;Essex;England;200,0,100
+1;Middlesex;Essex;England;200,100,0
+1;Northampton;Essex;England;255,255,255
+2;Gloucester;Hwicce;England;255,255,255
+2;Oxford;Hwicce;England;255,255,255
+2;Wiltshire;Hwicce;England;255,255,255
+3;Kent;Kent;England;100,200,0
+3;Surrey;Kent;England;250,0,200
+3;Sussex;Kent;England;0,200,200
+4;Chester;Lancaster;England;0,0,100
+4;Derby;Lancaster;England;0,0,100
+4;Lancaster;Lancaster;England;100,0,100
+4;Westmorland;Lancaster;England;255,255,255
+5;Leicester;Mercia;England;255,255,255
+5;Shrewsbury;Mercia;England;255,255,255
+5;Warwick;Mercia;England;255,255,255
+5;Worcester;Mercia;England;255,255,255
+6;Cumberland;Northumberland;England;255,255,255
+6;Durham;Northumberland;England;255,255,255
+6;Northumberland;Northumberland;England;255,255,255
+7;Dorset;Wessex;England;200,100,200
+7;Somerset;Wessex;England;255,255,255
+7;Winchester;Wessex;England;200,200,0
+8;Lincoln;York;England;100,100,0
+8;York;York;England;0,100,0
